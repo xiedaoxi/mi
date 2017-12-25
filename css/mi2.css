@@ -1,5 +1,5 @@
 body, p, img, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
-body { position: relative; font: 14px/24px/*å­—å·/è¡Œé«˜*/ "Microsoft YaHei", Arial; min-width: 960px; }
+body { position: relative; font: 14px/24px "Microsoft YaHei", Arial; min-width: 960px; }
 ul, ol { list-style: none; }
 img { border: 0 none; }
 a {text-decoration: none;}
