@@ -1,5 +1,4 @@
 
-/*澶撮儴*/
 .head{
 	width: 100%;
 	height: 40px;
@@ -70,7 +69,7 @@
 	color:#ff781d;
 	background-color: #fff;
 }
-/*nav瀵艰埅*/
+
 .nav{
 	width:1226px;
 	margin:0 auto;
@@ -135,7 +134,7 @@
 .search:hover{
 	background-color: rgb(255,103, 0);
 }
-/*浜岀骇瀵艰埅*/
+
 
 .nav-second{
 	width: 100%;
@@ -181,7 +180,7 @@
 	border:none;
 }
 
-/*涓讳綋1 杞挱鍖哄煙*/
+
 .main1{
 	width: 1226px;
 	margin:0 auto;
@@ -310,7 +309,6 @@
 	margin-left: 14px;
 	height: 173px;
 	transition:.5s all;
-	-webkit-transition:.5s all;
 }
 
 .picList li:hover{
@@ -347,7 +345,7 @@
 }
 
 
-/*main2涓婚2閮ㄥ垎*/
+
 .main2{
 	clear: both;
 	width:1226px;
@@ -448,7 +446,6 @@
 	display: block;
 }
 
-/*涓婚鍐呭涓�*/
 
 .main3{
 	width: 100%;
@@ -509,13 +506,7 @@
 	float: left;
 	width: 244px;
 	height: 614px;
-	 -webkit-transform:translate(0,0);
-	    -moz-transform:translate(0,0);
-	      -o-transform:translate(0,0);
-	     -o-transition:.5s all;
-	-webkit-transition:.5s all;
-	   -moz-transition:.5s all;
-	        transition:.5s all;
+ transition:.5s all;
 }
 
 .main3-tabcard-right{
@@ -546,22 +537,10 @@
 }
 
 .main3-tabcard-right li,.main3-tabcard-left img,.dapei-content-left img,.tuijian-box,.reping-box,.neirong-box,.shipin-box{
-	 -webkit-transform:translate(0,0);
-	    -moz-transform:translate(0,0);
-	      -o-transform:translate(0,0);
-	     -o-transition:.5s all;
-	-webkit-transition:.5s all;
-	   -moz-transition:.5s all;
 	        transition:.5s all;
 }
 
 .main3-tabcard-right li:hover,.main3-tabcard-left img:hover,.dapei-content-left img:hover, .tuijian-box:hover,.reping-box:hover,.neirong-box:hover,.shipin-box:hover{
-	 -webkit-transform:translate(0,-3px);
-	    -moz-transform:translate(0,-3px);
-	      -o-transform:translate(0,-3px);
-	     -o-transition:.5s all;
-	-webkit-transition:.5s all;
-	   -moz-transition:.5s all;
 	        transition:.5s all;
 	         transform:translate(0,-3px);
 	box-shadow: 4px 10px 15px rgba(0,0,0,0.1);
@@ -612,7 +591,7 @@
 	margin-bottom: 13px;
 }
 
-/*鎼厤*/
+
 .dapei{
 	width: 1226px;
 	margin:0 auto;
@@ -740,7 +719,7 @@
 	margin-top: 10px;
 }
 
-/*涓汉鎺ㄨ崘*/
+
 .main-tuijian{
 	clear: both;
 	width:1226px;
@@ -766,7 +745,7 @@
 	left: 0;
 }
 
-/*鐑瘎浜у搧*/
+
 .main-reping{
 	width:1244px;
 	height: 473px;
@@ -827,7 +806,6 @@
 	color:#333;
 }
 
-/*鍐呭*/
 .main-neirong{
 	width:1244px;
 	height: 473px;
@@ -1016,7 +994,7 @@
 	color: #fff;
 }
 
-/*瑙嗛*/
+
 .main-shipin{
 	width: 1244px;
 	height: 380px;
@@ -1110,7 +1088,7 @@
 
 }
 
-/*搴曢儴*/
+
 .foot{
 	width: 100%;
 	height: 260px;
