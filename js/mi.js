@@ -202,6 +202,4 @@ $(function(){
 	btnChange($("#card-left2"),$("#card-right2"),$("#neirong-tab2"),$("#card-list2>li"));
 	btnChange($("#card-left3"),$("#card-right3"),$("#neirong-tab3"),$("#card-list3>li"));
 	btnChange($("#card-left4"),$("#card-right4"),$("#neirong-tab4"),$("#card-list4>li"));
-	
-	
 });
