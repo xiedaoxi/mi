@@ -15,45 +15,52 @@ $(function(){
 	$(".nav-list-li").bind("mouseover",function(){
 		$("#nav-second").slideDown('fast');
 	})
-	
 	$(".nav-second").bind("mouseleave",function(){
 		$("#nav-second").slideUp('slow');
 	})
 
 //图片轮播	
-	var oli = $(".smallbtn li"),
-		oImg = $(".pic-wrap img");
-	picPlay($(".pic-li"),oli,$(".pic-wrap"),$(".pic-li>img:first"));
-	function picPlay(pic,list,wrap,firstobj){
-	    var len = list.length;
-	    var index = 0;  //图片序号
-	    var adTimer;
-	    list.mouseover(function() {
-	        index = list.index(this);  //获取鼠标悬浮 li 的index
-	        showImg(index);
-	    }).eq(0).mouseover();
-	    //滑入停止动画，滑出开始动画.
-	    wrap.hover(function() {
-	        clearInterval(adTimer);
-	    }, function() {
-	        adTimer = setInterval(function() {
-	            showImg(index);
-	            index++;
-	            if (index == len) {//最后一张图片之后，转到第一张
-	                index = 0;
-	            }
-	        }, 5000);
-	    }).trigger("mouseleave");
-	    //图片切换
-	    function showImg(index) {
-	        var adHeight = firstobj.height();
-	        pic.animate({
-	            "marginTop": -adHeight * index+"px" 
-	        }, 1);
-	        list.removeClass("bg-on")
-	            .eq(index).addClass("bg-on");
-	    }
-	}
+var img=1;
+$(".smallbtn li").mouseover(function(){
+	$(this).css('background','white').siblings().css('background','rgba(0,0,0,.3)')
+})
+abc();
+function abc(){
+t1=setTimeout(function(e){
+	img++;
+	$(".smallbtn li:eq("+(img-1)+")").css('background','white').siblings().css('background','rgba(0,0,0,.3)')
+	$('.smallbtn li:eq(0)').mouseover(function(){
+	img=1;$('.pic-li img').attr('src',"image/lunbo1.jpeg")
+	clearTimeout(t1);
+	abc();
+})
+	$('.smallbtn li:eq(1)').mouseover(function(){
+	img=2;$('.pic-li img').attr('src',"image/lunbo2.jpeg")
+	clearTimeout(t1);
+	abc();
+})
+	$('.smallbtn li:eq(2)').mouseover(function(){
+	img=3;$('.pic-li img').attr('src',"image/lunbo3.jpeg")
+	clearTimeout(t1);
+	abc();
+})
+	$('.smallbtn li:eq(3)').mouseover(function(){
+	img=4;$('.pic-li img').attr('src',"image/lunbo4.jpeg")
+	clearTimeout(t1);
+	abc();
+})
+	$('.smallbtn li:eq(4)').mouseover(function(){
+	img=5;$('.pic-li img').attr('src',"image/lunbo5.jpeg")
+	if(img==5){img=0}
+	clearTimeout(t1);
+	abc();
+})
+	$('.pic-li img').attr('src',"image/lunbo"+img+".jpeg")
+	if(img==5){img=0}
+	abc();
+},3000)
+}
+
 //侧边导航条
 	$(".main1-nav-ul > li").bind('mouseover', function(event) {
 		$(this).children(".main1-nav-list").show();
@@ -75,7 +82,7 @@ $(function(){
 		},500);
 		$("#spanright").addClass("span-color");
 	}
-	
+//	
 	$("#spanright").bind("click",rightPlay);
 	
 	function rightPlay(){
@@ -85,7 +92,6 @@ $(function(){
 		},500);
 		$("#spanleft").addClass("span-color")
 	}
-	
 // 搭配选项切换
 	var oLi = $(".dapei-head-list li"),
 		oBox = $(".dapei-tab");
@@ -188,4 +194,6 @@ $(function(){
 	btnChange($("#card-left2"),$("#card-right2"),$("#neirong-tab2"),$("#card-list2>li"));
 	btnChange($("#card-left3"),$("#card-right3"),$("#neirong-tab3"),$("#card-list3>li"));
 	btnChange($("#card-left4"),$("#card-right4"),$("#neirong-tab4"),$("#card-list4>li"));
+	
+	
 });
