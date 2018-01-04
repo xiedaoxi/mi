@@ -86,20 +86,6 @@ $(function(){
 		$("#spanleft").addClass("span-color")
 	}
 	
-	$("#main2-wrap").hover(function() {
-		clearInterval(timer);
-		timer = null;
-	}, function() {
-		time = setInterval(timeAuto,10000);
-	});
-	
-	function timeAuto(){
-		leftPlay();
-		setTimeout(rightPlay,4000);
-	}
-	timer = setInterval(timeAuto,10000);
-	
-
 // 搭配选项切换
 	var oLi = $(".dapei-head-list li"),
 		oBox = $(".dapei-tab");
